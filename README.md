@@ -8,7 +8,7 @@
 > The engine is written in vanilla javascript and only uses require js as an
 > external library.
 >
-> The main file is require JS. The engine consists of a main game object which can be initialized as
+> The main file is called by require JS which in turn references the game engine. The engine consists of a main game object which can be initialized as
 >
 ```js
 new Game('game', Constants.WINDOW_WIDTH,
