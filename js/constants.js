@@ -31,10 +31,10 @@ define([
   Constants.CONTROLS_TEXT_FONT = '15px Georgia';
 
   // Sounds
-  Constants.SHIP_DESTROYED_SOUND = 'sounds/Ship_Destroyed.mp3';
-  Constants.KILL_ENEMY_SOUND = 'sounds/Kill_Enemy_Sound.mp3';
-  Constants.FIRING_SOUND = 'sounds/Firing_Sound.mp3';
-  Constants.BACKGROUND_MUSIC = 'sounds/Background.mp3';
+  Constants.SHIP_DESTROYED_SOUND = 'sounds/Ship_Destroyed.ogg';
+  Constants.KILL_ENEMY_SOUND = 'sounds/Kill_Enemy_Sound.ogg';
+  Constants.FIRING_SOUND = 'sounds/Firing_Sound.ogg';
+  Constants.BACKGROUND_MUSIC = 'sounds/Background.ogg';
   Constants.ALL_SOUNDS = [
     Constants.SHIP_DESTROYED_SOUND, Constants.KILL_ENEMY_SOUND,
     Constants.FIRING_SOUND, Constants.BACKGROUND_MUSIC];

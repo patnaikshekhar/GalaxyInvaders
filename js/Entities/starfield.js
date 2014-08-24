@@ -33,8 +33,8 @@ define(['../constants',
     StarField.prototype.update = function (dt) {
       this.imagey -= (dt * this.speed);
 
-      if (this.imagey <= 0) {
-        this.imagey = Constants.WINDOW_HEIGHT;
+      if (this.imagey <= 1) {
+        this.imagey = Constants.WINDOW_HEIGHT - 1;
       }
     };
 

@@ -20,17 +20,19 @@
 
     var loader = document.getElementById('loader-wrapper');
 
-    // Load Sounds
-    game.soundManager.preLoad(Constants.ALL_SOUNDS, function() {
-
-      // Load Images
+    function loadImages() {
       game.imageManager.preLoad(Constants.ALL_IMAGES, function() {
         // Start Game
         loader.parentElement.removeChild(loader);
         game.startScene('menu');
       });
-    });
-
+    }
+    // Load Sounds
+    if (game.soundManager !== undefined) {
+      game.soundManager.preLoad(Constants.ALL_SOUNDS, loadImages);
+    } else {
+      loadImages();
+    }
   });
 
 })();
